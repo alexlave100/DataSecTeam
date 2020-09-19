@@ -41,7 +41,7 @@ public class App {
   public static ArrayList<Integer> walkingDistance = new ArrayList<>();
 
     public static void main(String[] args) throws IOException{
-      File file = new File("../ctsten0244_input_5.txt");
+      File file = new File("../ctsten0244_input_1.txt");
 
       FileReader f = new FileReader(file);
       BufferedReader br = new BufferedReader(f);
@@ -76,6 +76,7 @@ public class App {
         System.out.println(walkingDistance.get(i++));
       }
       
+      System.out.println(startX.get(2) + " " + startY.get(2));
        String s = br.readLine();
 
        //  Just to verify that next line is null (we have reached EOF)
