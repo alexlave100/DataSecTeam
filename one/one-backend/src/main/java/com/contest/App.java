@@ -75,10 +75,8 @@ public class App {
         System.out.print(destY.get(i) + " ");
         System.out.println(walkingDistance.get(i++));
       }
-      
-      System.out.println(startX.get(2) + " " + startY.get(2));
-       String s = br.readLine();
 
+       String s = br.readLine();
        //  Just to verify that next line is null (we have reached EOF)
        System.out.println("Next line is: " + s);
 
