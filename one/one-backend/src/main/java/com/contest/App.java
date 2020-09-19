@@ -41,7 +41,7 @@ public class App {
   public static ArrayList<Integer> walkingDistance = new ArrayList<>();
 
     public static void main(String[] args) throws IOException{
-      File file = new File("../ctsten0244_input_3.txt");
+      File file = new File("../ctsten0244_input_5.txt");
 
       FileReader f = new FileReader(file);
       BufferedReader br = new BufferedReader(f);
@@ -69,7 +69,6 @@ public class App {
         System.out.print(destX.get(i) + " ");
         System.out.print(destY.get(i) + " ");
         System.out.println(walkingDistance.get(i));
-        System.out.println();
         i++;
       }
       
