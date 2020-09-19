@@ -41,7 +41,7 @@ public class App {
   public static ArrayList<Integer> walkingDistance = new ArrayList<>();
 
     public static void main(String[] args) throws IOException{
-      File file = new File("../ctsten0244_input_2.txt");
+      File file = new File("../ctsten0244_input_3.txt");
 
       FileReader f = new FileReader(file);
       BufferedReader br = new BufferedReader(f);
@@ -61,15 +61,17 @@ public class App {
       }
 
       int i  = 0;
+      // Prints all start times of all rentals - just to test that the parser works.
+      // You can test with the other arrayLists also.
       while(i < rentalData.get(0)) {
         System.out.println(startTime.get(i++));
       }
       
        String s = br.readLine();
 
+       //  Just to verify that next line is null (we have reached EOF)
        System.out.println("Next line is: " + s);
 
        br.close();
     }
-
 }
