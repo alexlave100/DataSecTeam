@@ -61,10 +61,16 @@ public class App {
       }
 
       int i  = 0;
-      // Prints all start times of all rentals - just to test that the parser works.
-      // You can test with the other arrayLists also.
+      // Prints all fields of all rentals - just to test that the parser works.
       while(i < rentalData.get(0)) {
-        System.out.println(startTime.get(i++));
+        System.out.print(startTime.get(i) + " ");
+        System.out.print(startX.get(i) + " ");
+        System.out.print(startY.get(i) + " ");
+        System.out.print(destX.get(i) + " ");
+        System.out.print(destY.get(i) + " ");
+        System.out.println(walkingDistance.get(i));
+        System.out.println();
+        i++;
       }
       
        String s = br.readLine();
