@@ -61,7 +61,11 @@ public class App {
       }
 
       int i  = 0;
-      // Prints all fields of all rentals - just to test that the parser works.
+      // Prints all fields of all rentals + header(rentalData) - just to test that the parser works.
+      while(i < 5)
+        System.out.print(rentalData.get(i++) + " ");
+      System.out.println();
+      i = 0;
       while(i < rentalData.get(0)) {
         System.out.print(startTime.get(i) + " ");
         System.out.print(startX.get(i) + " ");
