@@ -11,15 +11,13 @@ public class FirstLineParser {
 
   public static void parseFirstLine(BufferedReader br) throws IOException {
     StringBuffer sb = new StringBuffer();
-    
     String s = br.readLine();
     int i = 0, length = s.length();
 
     while(i < length) {
       sb = new StringBuffer();
-      while(i < s.length() && s.charAt(i) != ' ') {
-        sb.append(s.charAt(i++));
-      }
+      while(i < length && s.charAt(i) != ' ')
+        sb.append(s.charAt(i++));       
       App.rentalData.add(parseString(sb.toString()));
       i++;
     }

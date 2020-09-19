@@ -41,8 +41,7 @@ public class App {
   public static ArrayList<Integer> walkingDistance = new ArrayList<>();
 
     public static void main(String[] args) throws IOException{
-      File file = new File("../ctsten0244_input_2.txt");
-
+      File file = new File("../ctsten0244_input_5.txt");
       FileReader f = new FileReader(file);
       BufferedReader br = new BufferedReader(f);
 

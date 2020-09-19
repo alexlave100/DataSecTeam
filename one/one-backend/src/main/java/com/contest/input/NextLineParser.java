@@ -10,46 +10,42 @@ public class NextLineParser {
   public NextLineParser() {}
 
   public static void parseRentalInformation(BufferedReader br) throws IOException {
-    StringBuffer sb = new StringBuffer();
-    
+    StringBuffer sb = new StringBuffer();  
     String s = new String();
     int i = 0, col = 0;
 
     while((s = br.readLine()) != null) {
-      while(i < s.length()) {
+      int length = s.length();
+      while(i < length) {
         sb = new StringBuffer();       
-        while(i < s.length() && s.charAt(i) != ' ') {
+        while(i < s.length() && s.charAt(i) != ' ')
           sb.append(s.charAt(i++));
-        }
-
-        insertData(sb, col);
-        col++;
-        i++;
+        insertData(sb.toString(), col);
+        col++; i++;
       }
       i = col = 0;
     }
   }
 
-
-  private static void insertData(StringBuffer sb, int col) {
+  private static void insertData(String s, int col) {
     switch (col) {
       case 0:
-        App.startTime.add(parseString(sb.toString()));
+        App.startTime.add(parseString(s));
         break;
       case 1:
-        App.startX.add(parseString(sb.toString()));
+        App.startX.add(parseString(s));
         break;
       case 2:
-        App.startY.add(parseString(sb.toString()));
+        App.startY.add(parseString(s));
         break;
       case 3:
-        App.destX.add(parseString(sb.toString()));
+        App.destX.add(parseString(s));
         break;
       case 4:
-        App.destY.add(parseString(sb.toString()));
+        App.destY.add(parseString(s));
         break;
       case 5:
-        App.walkingDistance.add(parseString(sb.toString()));
+        App.walkingDistance.add(parseString(s));
         break;
     }
   }
