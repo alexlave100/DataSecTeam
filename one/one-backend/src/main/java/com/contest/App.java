@@ -68,8 +68,7 @@ public class App {
         System.out.print(startY.get(i) + " ");
         System.out.print(destX.get(i) + " ");
         System.out.print(destY.get(i) + " ");
-        System.out.println(walkingDistance.get(i));
-        i++;
+        System.out.println(walkingDistance.get(i++));
       }
       
        String s = br.readLine();
