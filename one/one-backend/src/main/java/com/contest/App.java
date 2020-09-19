@@ -62,6 +62,7 @@ public class App {
 
       int i  = 0;
       // Prints all fields of all rentals + header(rentalData) - just to test that the parser works.
+      // This below prints identical output to the input files
       while(i < 5)
         System.out.print(rentalData.get(i++) + " ");
       System.out.println();
