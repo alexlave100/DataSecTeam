@@ -1,0 +1,7 @@
+C:\Users\magmulle\source\repos\Bikerental\Bikerental\bin\Debug\Bikerental.exe.config
+C:\Users\magmulle\source\repos\Bikerental\Bikerental\bin\Debug\Bikerental.exe
+C:\Users\magmulle\source\repos\Bikerental\Bikerental\bin\Debug\Bikerental.pdb
+C:\Users\magmulle\source\repos\Bikerental\Bikerental\obj\Debug\Bikerental.csprojAssemblyReference.cache
+C:\Users\magmulle\source\repos\Bikerental\Bikerental\obj\Debug\Bikerental.csproj.CoreCompileInputs.cache
+C:\Users\magmulle\source\repos\Bikerental\Bikerental\obj\Debug\Bikerental.exe
+C:\Users\magmulle\source\repos\Bikerental\Bikerental\obj\Debug\Bikerental.pdb
